@@ -12,4 +12,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server: {
+    allowedHosts: [".csb.app"], // Allows all CodeSandbox subdomains
+    host: true, // Allow external access (useful for CodeSandbox)
+  },
 });
